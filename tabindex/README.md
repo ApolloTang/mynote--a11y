@@ -32,7 +32,10 @@ You should not add the `tabindex` attribute to the above elements unless you int
 
 Since you only use `0` and `-1` as `tabindex` value, here is their behaviour:
 
-- When the value of `tabindex` is **negative**, the element can not be navigated by `Tab` key. You have to use Javascript to focus on it.  (The exact negative value doesn't matter.) (This is useful for elements that should not be navigated to directly using the `Tab` key;  For example, when an off-screen modal window that should be focused when it comes into view, or a form submission error message that should be immediately focused when an errant form is submitted.) 
+- When the value of `tabindex` is **negative**, the element can not be navigated by `Tab` key. You have to use Javascript to focus on it .
+  - The exact negative value doesn't matter.
+  - This is useful for elements that should not be navigated to directly using the `Tab` key;  For example, when an off-screen modal window that should be focused when it comes into view, or a form submission error message that should be immediately focused when an errant form is submitted.
+
 - When the value of `tabindex` is `0`, the sequential keyboard navigation follow their order in the document source. 
 
 Now, if you must use `tabindex` value greater than `0`, then these elements will be focused first before the one set with`0` value.  The focus order will be defined by the value of the number. For example: `4` is focus before `5` but after `3`.  After all `tabindex` value greater than `0` is focused, the zeroed value `tabindex` elements will be focused. If multiple elements share the same positive `tabindex` value, their order relative to each other follows their position in the document source.
