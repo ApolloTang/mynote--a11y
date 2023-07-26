@@ -1,10 +1,4 @@
-
-
-# My note on accessibility
-
-
-
-## References:
+# References:
 
 [www.a11yproject.com](https://www.a11yproject.com/)
 

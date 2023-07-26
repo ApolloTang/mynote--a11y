@@ -1,2 +1,2 @@
-# My note of accessibility
+# Accessibility Study notes
 
